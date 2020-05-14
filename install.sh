@@ -27,7 +27,7 @@ brew services start mysql
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;"
 
 # memcached note
-echo "At the first memcached question answer 'no --disabled-memcached-sasl'"
+echo "At the first memcached question answer 'no --disable-memcached-sasl'"
 
 # Install PHP extensions with PECL
 pecl install memcached imagick
