@@ -37,7 +37,8 @@ If you did all of the above you may now follow these install instructions to set
 13. Manual copy:
 	- Sites directory
 	- Development directory
-14. Open the following and setup:
+14. Remap spotlight to Option+Space
+15. Open the following and setup:
 	- Spark
 	- Backup and Sync
 	- Alfred and relink preferences
