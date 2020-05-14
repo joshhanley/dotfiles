@@ -21,13 +21,13 @@ brew bundle
 pecl install memcached imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require friendsofphp/php-cs-fixer laravel/installer laravel/valet phploc/phploc phpunit/phpunit
+/usr/local/bin/composer global require friendsofphp/php-cs-fixer laravel/installer laravel/valet # phploc/phploc phpunit/phpunit
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
 #Install global NPM packages
-/usr/local/bin/npm install -g @bchatard/alfred-jetbrains @vue/cli @vue/cli-init @vue/devtools nativescript npm-reinstall postcss-cli
+/usr/local/bin/npm install -g @bchatard/alfred-jetbrains @vue/cli @vue/devtools nativescript npm-reinstall # @vue/cli-init postcss-cli
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
