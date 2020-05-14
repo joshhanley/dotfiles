@@ -12,6 +12,7 @@ brew 'git'
 brew 'hub'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
+brew 'pkg-config' #Needed for Memcached
 brew 'tree' # List directories in a tree structure
 brew 'zlib' # Needed for Memcached
 # brew 'awscli'
