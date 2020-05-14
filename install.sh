@@ -26,6 +26,9 @@ brew services start mysql
 # Set default MySQL root password and auth type.
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;"
 
+# memcached note
+echo "At the first memcached question answer 'no --disabled-memcached-sasl'"
+
 # Install PHP extensions with PECL
 pecl install memcached imagick
 
