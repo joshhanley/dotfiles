@@ -10,6 +10,7 @@ brew 'coreutils'
 brew 'dnsmasq', restart_service: true
 brew 'git'
 brew 'hub'
+brew 'libmemcached'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' #Needed for Memcached
