@@ -170,6 +170,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "Australia/Sydney" > /dev/null
 
+# Set time format in menu bar
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  h:mm a"
+
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
@@ -213,6 +216,9 @@ sudo pmset -a standbydelay 86400
 # sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
 # sudo chflags uchg /private/var/vm/sleepimage
+
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 ###############################################################################
 # Screen                                                                      #
@@ -264,6 +270,9 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: hide desktop icons
+defaults write com.apple.finder CreateDesktop -bool false
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
