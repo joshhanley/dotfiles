@@ -29,7 +29,7 @@ If you did all of the above you may now follow these install instructions to set
 6. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
 7. Clone this repo to `~/.dotfiles`
 8. Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh#getting-started)
-9. Run `install.sh` to start the installation
+9. Run `sh ~/.dotfiles/install.sh` to start the installation
 10. After mackup is synced with your cloud storage, restore preferences by running `mackup restore`
 11. Restart your computer to finalize the process
 12. Manual install the following
