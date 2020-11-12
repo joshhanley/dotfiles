@@ -173,6 +173,16 @@ sudo systemsetup -settimezone "Australia/Sydney" > /dev/null
 # Set time format in menu bar
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  h:mm a"
 
+# Set day of week starts on Monday
+defaults write com.apple.iCal "first day of week" -int 1
+defaults write NSGlobalDomain AppleFirstWeekday -dict 'gregorian' 2
+
+# Show Bluetooth in menu bar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+
+# Show volume in menu bar
+defaults write com.apple.systemuiserver menuExtras -array-add "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
