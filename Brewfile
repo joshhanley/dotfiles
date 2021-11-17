@@ -2,6 +2,7 @@
 tap 'homebrew/cask'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
+tap deligoez/cask
 # tap 'homebrew/cask-versions'
 # tap 'miderwong/flutter'
 
@@ -9,17 +10,18 @@ tap 'homebrew/cask-fonts'
 brew 'coreutils'
 brew 'dnsmasq', restart_service: true
 brew 'git'
-brew 'hub'
-brew 'libmemcached'
+# brew 'hub'
+brew 'gh'
+# brew 'libmemcached'
 brew 'mackup'
 brew 'mas' # Mac App Store manager
-brew 'pkg-config' #Needed for Memcached
+brew 'pkg-config' #Needed for Memcached and imagick
 brew 'tree' # List directories in a tree structure
-brew 'zlib' # Needed for Memcached
+# brew 'zlib' # Needed for Memcached
 # brew 'awscli'
 # brew 'bash'
 # brew 'stripe/stripe-cli/stripe'
-# brew 'subversion'
+brew 'subversion'
 
 # Development
 
@@ -34,46 +36,55 @@ brew 'redis'
 # brew 'miderwong/flutter/flutter'
 
 # Apps
-cask '1password'
-cask 'adobe-creative-cloud'
 cask 'alfred'
-cask 'autodesk-fusion360'
+cask 'anydesk'
+cask 'audacity'
 cask 'discord'
 cask 'figma'
 cask 'figmadaemon'
 cask 'firefox'
 cask 'github'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
+cask 'google-drive'
+cask 'helo'
+cask 'hyper'
 cask 'iterm2'
 cask 'logitech-options'
 cask 'microsoft-office'
 cask 'notion'
 cask 'parallels'
 cask 'phpstorm'
-cask 'qbserve'
+cask 'ray'
+cask 'screenflow'
 cask 'signal'
-cask 'slack'
 cask 'sourcetree'
-cask 'sublime-text'
 cask 'tableplus'
-cask 'teamviewer'
+cask 'telegram'
 cask 'the-unarchiver'
 cask 'tinkerwell'
-cask 'vagrant'
-cask 'virtualbox' # Might need to allow access in Security settings
-cask 'virtualbox-extension-pack'
+cask 'tint'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'xdebug-toggler'
+# cask '1password'
+# cask 'adobe-creative-cloud'
+# cask 'autodesk-fusion360'
 # cask 'dropbox'
+# cask 'google-backup-and-sync'
 # cask 'google-chat'
 # cask 'insomnia'
 # cask 'parallels-toolbox'
+# cask 'qbserve'
 # cask 'sequel-pro'
 # cask 'sizzy'
+# cask 'slack'
 # cask 'spotify'
-# cask 'telegram'
+# cask 'sublime-text' # Disabled as can't install v3
+# cask 'teamviewer'
 # cask 'there'
+# cask 'vagrant'
+# cask 'virtualbox' # Might need to allow access in Security settings
+# cask 'virtualbox-extension-pack'
 # cask 'whatsapp'
 
 # Fonts
@@ -88,11 +99,14 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
+mas 'Bear', id: 1091189122
 mas 'Dato', id: 1470584107
 mas 'Divvy', id: 413857545
+mas 'EasyRes', id: 688211836
 mas 'Remote Mouse', id: 403195710
 mas 'Spark', id: 1176895641
-mas 'Todoist', id: 585829637
+mas 'Things', id: 904280696
+# mas 'Todoist', id: 585829637
 # mas 'ColorSlurp', id: 1287239339
 # mas 'DirEqual', id: 1435575700
 # mas 'Magnet', id: 441258766

@@ -27,19 +27,20 @@ brew services start mysql
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY ''; FLUSH PRIVILEGES;"
 
 # memcached note
-echo "At the first memcached question answer 'no --disable-memcached-sasl'"
+# echo "At the first memcached question answer 'no --disable-memcached-sasl'"
 
 # Install PHP extensions with PECL
-pecl install memcached imagick
+# pecl install memcached imagick
+pecl install imagick
 
 # Install global Composer packages
-/usr/local/bin/composer global require friendsofphp/php-cs-fixer laravel/installer laravel/valet # phploc/phploc phpunit/phpunit
+/opt/homebrew/bin/composer global require beyondcode/expose friendsofphp/php-cs-fixer laravel/installer laravel/valet php-cs-fixer/diff tightenco/lambo # phploc/phploc phpunit/phpunit
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
 #Install global NPM packages
-/usr/local/bin/npm install -g @bchatard/alfred-jetbrains @vue/cli @vue/devtools nativescript npm-reinstall # @vue/cli-init postcss-cli
+/opt/homebrew/bin/npm install -g @bchatard/alfred-jetbrains npm-reinstall # @vue/cli @vue/devtools @vue/cli-init nativescript  postcss-cli
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
