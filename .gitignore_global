@@ -1,0 +1,50 @@
+*~
+.DS_Store
+.idea
+.php_cs.cache
+.php-cs-fixer.cache
+.phpunit.cache
+.phpunit.result.cache
+.phpactor.json
+# .env.testing
+.env.old
+.npmrc
+auth.json
+launch.json
+deprecations.log
+tests/Browser/console
+tests/Browser/screenshots
+tests/Browser/source
+storage/debugbar
+gh
+.claude/settings.local.json
+.codex
+playwright-report
+
+.env.app.new
+.env.app.old
+.env.dev.new
+.env.dev.old
+
+composer.lock.old
+
+.workspace.json
+# packages/
+
+
+# Dependency directories
+node_modules
+
+# Project config
+project.json
+
+# Flux
+# dist/flux.js
+# dist/flux.min.js
+# dist/flux.module.js
+# dist/flux-lite.js
+# dist/flux-lite.min.js
+# dist/manifest.json
+# dist/editor.js
+# dist/editor.min.js
+# dist/editor.module.js
